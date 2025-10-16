@@ -12,6 +12,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+# NEW STEP: Grant Execute Permission to test.sh
+    - name: Grant Execute Permission
+      run: 
+        chmod +x test.sh
+        ./test.sh
+
     # 2. Run CI Tests (Executes your test.sh script)
     - name: Run CI Tests
       run: ./test.sh
