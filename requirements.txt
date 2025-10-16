@@ -1,0 +1,2 @@
+# Create the file and paste the content below:
+nano requirements.txt
